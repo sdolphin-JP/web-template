@@ -1,0 +1,5 @@
+# BEGIN Block direct access
+  RewriteEngine on
+  RewriteCond %{IS_SUBREQ} =false
+  RewriteRule ^(.*)$ - [L,F]
+# END   Block direct access

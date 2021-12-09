@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- 共通ヘッダ -->
+        <!--#include virtual="assets/inc/html_header.html" -->
+        <!-- 固有ヘッダ -->
+        <title>サンプルページ</title>
+        <meta name="description" content="ページの説明">
+    </head>
+    <body>
+        <!-- ヘッダ -->
+        <!--#include virtual="assets/inc/contents_header.html" -->
+        <!-- コンテンツ -->
+        <main id="id_page_content" class="b_page_content">
+            <!-- お知らせ -->
+            <div id="id_page_notice" class="b_page_notice">
+                <h1 class="i_page_notice_title">★お知らせ</h1>
+                <ul class="b_page_notice_items">
+                    <li class="b_page_notice_item">お知らせ1</li>
+                    <li class="b_page_notice_item">お知らせ2</li>
+                </ul>
+            </div>
+            <article class="b_article">
+                <h1 class="i_article_header">記事1タイトル</h1>
+                <div class="b_article_main">
+                    記事1内容
+                </div>
+            </article>
+            <article class="b_article">
+                <h1 class="i_article_header-border">記事2タイトル</h1>
+                <div class="b_article_main">
+                    記事2内容
+                </div>
+            </article>
+        </main>
+        <!-- フッタ -->
+        <!--#include virtual="assets/inc/contents_footer.html" -->
+  </body>
+</html>

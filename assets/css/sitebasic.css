@@ -1,0 +1,313 @@
+/*
+ * Site basic css Version 3.1.0
+ * Copyright (C) sdolphin.jp
+ */
+
+/*
+ * Various sizes should be multiples of 8.
+ * Margin default is 0px 16px 32px 16px.
+ * Padding default is 0px.
+ */
+
+ /******************************************************************************
+ * Customize.
+ ******************************************************************************/
+
+:root {
+    /* Colors. */
+    --color-theme-light: #3b939b;   /* For header */
+    --color-theme-dark: #4b4b4b;    /* For footer */
+    --color-text-light: #f1f1f1;
+    --color-text-dark: #2b2b2b;
+    --color-back-light: #f1f1f1;
+    --color-back-gray: #e1e1e1;
+    --color-back-dark: #cccccc;
+
+    /* Options. */
+    --option-header-nav: block; /* block (show) or none (hidden) */
+    --option-footer-nav: flex;  /* flex  (show) or none (hidden) */
+}
+
+
+/******************************************************************************
+ * Default
+ ******************************************************************************/
+
+html {
+
+    /* Not inheritable */
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+body {
+
+    /* Not inheritable */
+    background: var(--color-back-light);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    margin: 0px;
+    min-width: 400px;
+    overflow: visible;
+    padding: 0px;
+
+    /* Inheritable */
+    color: var(--color-text-dark);
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Meiryo", "メイリオ", sans-serif;
+    font-size: medium;
+    line-height: 1.4;
+    text-align: center;
+    word-break: break-all;
+
+    /* For debug */
+    /* border: 1px solid red; */
+}
+
+
+/******************************************************************************
+ * Header
+ ******************************************************************************/
+
+.b_page_header {
+
+    /* Not inheritable */
+    align-items: center;
+    background: var(--color-theme-light);
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    overflow: hidden;
+    padding: 16px 0px;
+    text-overflow: ellipsis;
+
+    /* Inheritable */
+    color: var(--color-text-light);
+    text-align: left;
+    user-select: none;
+
+    /* For debug */
+    /* border: 1px solid red; */
+}
+
+.i_page_header_text {
+
+    /* Not inheritable */
+    padding: 0px 8px;
+    text-decoration: none;
+
+    /* Inheritable */
+    color: inherit;
+    font-size: xx-large;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.b_page_header_nav {
+
+    /* Not inheritable */
+    display: var(--option-header-nav);
+    margin: 0px 16px 0px auto;
+}
+
+.b_page_header_nav_items {
+
+    /* Not inheritable */
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+    padding: 0px;
+
+    /* Inheritable */
+    font-size: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.i_page_header_nav_item {
+
+    /* Not inheritable */
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    margin: 0px 0px 0px 16px;
+
+    /* Inheritable */
+    color: var(--color-text-light);
+    font-size: small;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+
+/******************************************************************************
+ * Contents
+ ******************************************************************************/
+
+.b_page_content {
+
+    /* Not inheritable */
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    margin: 32px;
+
+    /* Inheritable */
+    text-align: left;
+
+    /* For debug */
+    /* border: 1px solid red; */
+}
+
+
+/******************************************************************************
+ * Footer
+ ******************************************************************************/
+
+.b_page_footer {
+
+    /* Not inheritable */
+    background: var(--color-theme-dark);
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    overflow: hidden;
+    padding: 8px 0px;
+    text-overflow: ellipsis;
+
+    /* Inheritable */
+    text-align: center;
+    user-select: none;
+
+    /* For debug */
+    /* border: 1px solid red; */
+}
+
+.i_page_footer_text {
+
+    /* Not inheritable */
+    text-decoration: none;
+
+    /* Inheritable */
+    color: var(--color-text-light);
+    font-size: medium;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.b_page_footer_nav {
+
+    /* Not inheritable */
+    display: var(--option-footer-nav);
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 0px 0px 16px 0px;
+}
+
+.b_page_footer_nav_items {
+
+    /* Not inheritable */
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 8px;
+    overflow: hidden;
+    padding: 0px;
+
+    /* Inheritable */
+    font-size: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.i_page_footer_nav_title {
+
+    /* Inheritable */
+    color: var(--color-text-light);
+    font-size: small;
+    font-weight: bold;
+}
+
+.i_page_footer_nav_item {
+
+    /* Not inheritable */
+    display: inline-block;
+    padding: 0px 0px 0px 8px;
+    text-decoration: none;
+
+    /* Inheritable */
+    color: var(--color-text-light);
+    font-size: x-small;
+}
+
+
+/******************************************************************************
+ * Notice.
+ ******************************************************************************/
+
+.b_page_notice {
+
+    /* Not inheritable */
+    background: var(--color-back-gray);
+    border: 1px solid var(--color-back-dark);
+    margin: 0px 0px 32px 0px;
+    padding: 0px 16px 16px 16px;
+}
+
+.i_page_notice_title {
+
+    /* Inheritable */
+    font-size: x-large;
+}
+
+.b_page_notice_items {
+
+    /* Not inheritable */
+    margin: 0px 0px 0px 16px;
+    padding: 0px;
+}
+
+.b_page_notice_item {
+
+    /* Not inheritable */
+    list-style-type:none;
+    margin: 0px 0px 4px 0px;
+    padding: 0px;
+    text-decoration: none;
+
+    /* Inheritable */
+    color: var(--color-text-dark);
+}
+
+
+/******************************************************************************
+ * Article.
+ ******************************************************************************/
+
+ .b_article {
+
+    /* Not inheritable */
+    margin: 0px 0px 32px 16px;
+    padding: 0px 0px 16px 0px;
+}
+
+.i_article_header {
+
+    /* Not inheritable */
+    margin: 0px 0px 16px 0px;
+}
+
+.i_article_header-border {
+
+    /* Not inheritable */
+    background: var(--color-back-gray);
+    border-bottom: inset 4px var(--color-theme-light);
+    border-left: inset 4px var(--color-theme-light);
+    margin: 0px 0px 16px 0px;
+    padding: 4px 4px 4px 16px;
+}
+
+.b_article_main {
+
+    /* Not inheritable */
+    margin: 0px 0px 0px 16px;
+}

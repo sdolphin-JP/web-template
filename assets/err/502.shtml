@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- 共通ヘッダ -->
+        <!--#include virtual="../../assets/inc/html_header.html" -->
+        <!-- 固有ヘッダ -->
+        <title>502 Bad Gateway</title>
+        <meta name="description" content="502 Bad Gateway">
+        <!-- 埋め込みスタイル -->
+        <style type="text/css">
+            .b_error_box_outer { align-items: center; display: flex; height: 100%; justify-content: center; margin: auto; text-align: center; width: 90%; }
+            .b_error_box_inner { flex-grow: 1; }
+        </style>
+    </head>
+    <body>
+        <!-- ヘッダ -->
+        <!--#include virtual="../../assets/inc/contents_header.html" -->
+        <!-- コンテンツ -->
+        <main id="id_page_content" class="b_page_content">
+            <div class="b_error_box_outer">
+                <div class="b_error_box_inner">
+                    <h1>ゲートウェイから不正な応答がかえりました。</h1>
+                    <hr>
+                    <h1>Sorry, returned invalid reply from gateway.</h1>
+                </div>
+            </div>
+        </main>
+        <!-- フッタ -->
+        <!--#include virtual="../../assets/inc/contents_footer.html" -->
+    </body>
+</html>

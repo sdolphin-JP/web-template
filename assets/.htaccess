@@ -1,0 +1,3 @@
+# BEGIN Allow all access
+Require all granted
+# END   Allow all access
