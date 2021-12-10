@@ -35,5 +35,5 @@
         </main>
         <!-- フッタ -->
         <!--#include virtual="assets/inc/contents_footer.html" -->
-  </body>
+    </body>
 </html>
