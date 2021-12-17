@@ -1,5 +1,5 @@
 /*
- * Site basic css Version 3.1.0
+ * Site basic css Version 3.2.0
  * Copyright (C) sdolphin.jp
  */
 
@@ -13,7 +13,15 @@
  * Customize.
  ******************************************************************************/
 
+
+@font-face {
+
+    font-family: "sitefont";
+    src: url("/assets/font/MyricaM/MyricaM.woff2") format("woff2")
+}
+
 :root {
+
     /* Colors. */
     --color-theme-light: #3b939b;   /* For header */
     --color-theme-dark: #4b4b4b;    /* For footer */
@@ -26,6 +34,10 @@
     /* Options. */
     --option-header-nav: block; /* block (show) or none (hidden) */
     --option-footer-nav: flex;  /* flex  (show) or none (hidden) */
+
+    /* Font */
+    /* --font-default: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Meiryo", "メイリオ", monospace; */
+    --font-default: "sitefont", monospace;
 }
 
 
@@ -56,7 +68,7 @@ body {
 
     /* Inheritable */
     color: var(--color-text-dark);
-    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Meiryo", "メイリオ", sans-serif;
+    font-family: var(--font-default);
     font-size: medium;
     line-height: 1.4;
     text-align: center;
